@@ -1,0 +1,15 @@
+# Секреты — никогда не коммитить
+.env
+.env.local
+data/tokens.json
+*.log
+
+# Артефакты сборки
+dist/
+node_modules/
+
+# Локальные данные бота
+data/queue.json
+data/replied.json
+
+.DS_Store
