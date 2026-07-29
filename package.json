@@ -1,0 +1,33 @@
+{
+  "name": "threads-bot",
+  "version": "1.0.0",
+  "description": "Бот для Meta Threads на официальном API: публикация, отложенные посты, автоответы, аналитика",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "threads-bot": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.js",
+    "bot": "node dist/cli.js",
+    "prepare": "npm run build",
+    "test:full": "npm run build && node --test tests/*.test.js"
+  },
+  "keywords": [
+    "threads",
+    "threads-api",
+    "meta",
+    "bot",
+    "automation",
+    "scheduler"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.7.3"
+  }
+}
